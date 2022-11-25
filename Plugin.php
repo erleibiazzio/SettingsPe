@@ -15,10 +15,11 @@ class Plugin extends \MapasCulturais\Plugin
         $app = App::i();
         
         $app->view->enqueueStyle("app","settins-pe","css/settins-pe.css");
-        $app->hook("template(agent.edit.<<*>>):after",function(){
+        $app->hook("template(agent.<<*>>.<<*>>):after",function(){
 
             /** @var Theme $this */
             $this->addTaxonoyTermsToJs("subarea");
+            $this->addTaxonoyTermsToJs("tag");
         });
     }
 
