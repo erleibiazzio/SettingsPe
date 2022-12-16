@@ -15,6 +15,8 @@ class Plugin extends \MapasCulturais\Plugin
         $app = App::i();
         
         $app->view->enqueueStyle("app","settins-pe","css/settins-pe.css");
+        $app->view->enqueueStyle("app","cadunico","css/cadunico/cadunico.css");
+        
         $app->hook("template(agent.<<edit|single>>.header-content):after",function() use ($app){
 
             /** @var Theme $this */
