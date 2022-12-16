@@ -42,14 +42,14 @@ if($resgistration){
                 <div class="tag-group">
                     <div class="tag-group__title"> Área de atuação principal: </div>
                     <div class="tag-group__content">
-                        <div class="tag"> <?= $area_atuacao_principal ?> </div>
+                        <div class="tag"> <?= $agent->areaprincipal ?> </div>
                     </div>
                 </div>
 
                 <div class="tag-group">
                     <div class="tag-group__title"> Subárea de atuação principal: </div>
                     <div class="tag-group__content">
-                        <div class="tag"> <?= $sub_area_atuacao_principal ?> </div>
+                        <div class="tag"> <?= $agent->subareaprincipal ?> </div>
                     </div>
                 </div>
             </div>
