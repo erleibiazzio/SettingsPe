@@ -33,6 +33,13 @@ class Plugin extends \MapasCulturais\Plugin
     public function register()
     {
         $this->registerTaxonomies();
+
+        $this->registerAgentMetadata("CPC", [
+            "private" => true,
+            "label" => "Cadastro de Produtor Cultural - CPC",
+            "type" => "string",
+            "available_for_opportunities" => true,
+        ]);
     }
 
     public function registerTaxonomies()
