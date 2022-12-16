@@ -63,19 +63,25 @@ if($resgistration){
 
     <div class="logos">
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img1.png")?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img1.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img2.png")?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img2.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img3.png")?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img3.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img4.png")?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img4.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img5.png")?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img5.png") ?>" aria-hidden="true">
+        </div>
+        <div class="logo">
+            <img src="<?php $this->asset("img/cadunico/pe-img6.png") ?>" aria-hidden="true">
+        </div>
+        <div class="logo">
+            <img src="<?php $this->asset("img/cadunico/pe-img7.png") ?>" aria-hidden="true">
         </div>
     </div>
 </div>
