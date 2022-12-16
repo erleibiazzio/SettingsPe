@@ -2,6 +2,16 @@
 
 $this->layout = "nolayout";
 $agent = $relation->owner;
+
+$area_atuacao_principal = null;
+$sub_area_atuacao_principal = null;
+
+if($resgistration){
+    $resgistration->registerFieldsMetadata();
+    $settings_pe_config =$app->plugins['SettingsPe']->config;
+    $area_atuacao_principal = $resgistration->{$settings_pe_config['field_area_principal']};
+    $sub_area_atuacao_principal = $resgistration->{$settings_pe_config['field_sub_area_principal']};
+}
 ?>
 
 <div class="cadunico">
@@ -28,26 +38,25 @@ $agent = $relation->owner;
                     ID: <?= $agent->id ?> | CPC: <?= $agent->CPC ?>
                 </div>
             </div>
-            <div class="user-description">
-                <strong>Descrição curta:</strong> <?= $agent->shortDescription ?>
-            </div>
+            
             <div class="user-tags">
+            <?php if($area_atuacao_principal):?>
                 <div class="tag-group">
-                    <div class="tag-group__title"> Área de atuação: </div>
+                    <div class="tag-group__title"> Área de atuação principal: </div>
                     <div class="tag-group__content">
-                        <?php foreach ($agent->terms['area'] as $area) : ?>
-                            <div class="tag"> <?= $area ?> </div>
-                        <?php endforeach ?>
+                        <div class="tag"> <?= $area_atuacao_principal ?> </div>
                     </div>
                 </div>
+            <?php endif?>
+
+            <?php if($sub_area_atuacao_principal):?>
                 <div class="tag-group">
-                    <div class="tag-group__title"> Subárea de atuação: </div>
+                    <div class="tag-group__title"> Subárea de atuação principal: </div>
                     <div class="tag-group__content">
-                        <?php foreach ($agent->terms['subarea'] as $subarea) : ?>
-                            <div class="tag"> <?= $subarea ?> </div>
-                        <?php endforeach ?>
+                        <div class="tag"> <?= $sub_area_atuacao_principal ?> </div>
                     </div>
                 </div>
+            <?php endif?>
             </div>
         </div>
     </div>

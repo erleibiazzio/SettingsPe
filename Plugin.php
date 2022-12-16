@@ -8,6 +8,16 @@ use MapasCulturais\Definitions\Taxonomy;
 
 class Plugin extends \MapasCulturais\Plugin
 {
+    function __construct($config = []) 
+    {
+        $config += [
+            'field_sub_area_principal' => "field_113",
+            'field_area_principal' => "field_114",
+        ];
+
+        parent::__construct($config);
+    }
+
 
     public function _init()
     {
