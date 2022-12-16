@@ -52,8 +52,13 @@ if($resgistration){
                         <div class="tag"> <?= $agent->subareaprincipal ?> </div>
                     </div>
                 </div>
-            </div>
         </div>
+    </div>
+</div>
+
+<div class="cadunico">
+    <div class="text">
+        Esse cartão não configura em uma comprovação de atuação artística para fins de candidatura em editais da SECULT-PE e FUNDARPE
     </div>
 
     <div class="logos">
