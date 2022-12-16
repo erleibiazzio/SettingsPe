@@ -18,12 +18,9 @@ class Plugin extends \MapasCulturais\Plugin
         $app->view->enqueueStyle("app","cadunico","css/cadunico/cadunico.css");
         
         $app->hook("template(agent.<<edit|single>>.header-content):after",function() use ($app){
-
             /** @var Theme $this */
             $this->addTaxonoyTermsToJs("subarea");
             $this->addTaxonoyTermsToJs("tag");
-
-           
         });
 
         $app->hook('view.partial(widget-tags).params', function ($data, &$template) {
