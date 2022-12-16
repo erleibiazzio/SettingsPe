@@ -85,7 +85,3 @@ if($resgistration){
         </div>
     </div>
 </div>
-
-<style>
-    
-</style>
