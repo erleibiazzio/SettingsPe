@@ -1,7 +1,7 @@
-.cadunico {
+/* .cadunico {
     margin: auto;
     width: 33.33333%;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
@@ -15,12 +15,14 @@
     border: 1px solid;
     border-radius: 4px;
     position: relative;
-    width: 643px;
+    max-width: 643px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 40% 1fr;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     background-size: cover;
+    margin: 0 auto;
 }
 
 /* Left side */
@@ -122,8 +124,17 @@
     color: #f7e9e0;
 }
 
+.cadunico .text{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 643px;
+    width: 100%;
+}
+
 .logos {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logos .logo {
