@@ -14,32 +14,31 @@ if($resgistration){
 }
 ?>
 
-<div class="cadunico">
-    <div class="card" style="background-image: url(<?php $this->asset("img/cadunico/card-bg.png")?>);">
-        <div class="card--left">
-            <div class="user-img">
-                <?php if ($agent->avatar) : ?>
-                    <img src="<?= $agent->avatar->url ?>" />
-                <?php endif ?>
+<div class="card" style="background-image: url(<?php $this->asset("img/cadunico/card-bg.png") ?>);">
+    <div class="card--left">
+        <div class="user-img">
+            <?php if ($agent->avatar) : ?>
+                <img src="<?= $agent->avatar->url ?>" />
+            <?php endif ?>
+        </div>
+    </div>
+    <div class="card--right">
+        <div class="title">
+            Cadastro único da cultura
+        </div>
+        <div class="user-name">
+            <?= $agent->name ?>
+        </div>
+        <div class="user-info">
+            <div class="user-info__name">
+                Nome completo: <?= $agent->nomeCompleto ?>
+            </div>
+            <div class="user-info__notation">
+                ID: <?= $agent->id ?> | CPC: <?= $agent->CPC ?>
             </div>
         </div>
-        <div class="card--right">
-            <div class="title">
-                Cadastro único da cultura
-            </div>
-            <div class="user-name">
-                <?= $agent->name ?>
-            </div>
-            <div class="user-info">
-                <div class="user-info__name">
-                    Nome completo: <?= $agent->nomeCompleto ?>
-                </div>
-                <div class="user-info__notation">
-                    ID: <?= $agent->id ?> | CPC: <?= $agent->CPC ?>
-                </div>
-            </div>
-            
-            <div class="user-tags">
+
+        <div class="user-tags">
             <?php if($area_atuacao_principal):?>
                 <div class="tag-group">
                     <div class="tag-group__title"> Área de atuação principal: </div>
