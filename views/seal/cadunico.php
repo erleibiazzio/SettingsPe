@@ -39,23 +39,19 @@ if($resgistration){
         </div>
 
         <div class="user-tags">
-            <?php if($area_atuacao_principal):?>
                 <div class="tag-group">
                     <div class="tag-group__title"> Área de atuação principal: </div>
                     <div class="tag-group__content">
                         <div class="tag"> <?= $area_atuacao_principal ?> </div>
                     </div>
                 </div>
-            <?php endif?>
 
-            <?php if($sub_area_atuacao_principal):?>
                 <div class="tag-group">
                     <div class="tag-group__title"> Subárea de atuação principal: </div>
                     <div class="tag-group__content">
                         <div class="tag"> <?= $sub_area_atuacao_principal ?> </div>
                     </div>
                 </div>
-            <?php endif?>
             </div>
         </div>
     </div>
