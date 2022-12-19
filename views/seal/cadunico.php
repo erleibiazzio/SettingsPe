@@ -39,7 +39,9 @@ if($resgistration){
                 ID: <?= $agent->id ?> | CPC: <?= $agent->CPC ?>
             </div>
         </div>
-
+        <div class="user-description">
+            <strong>Descrição curta:</strong> <?= $agent->shortDescription ?>
+        </div>
         <div class="user-tags">
                 <div class="tag-group">
                     <div class="tag-group__title"> Área de atuação principal: </div>
