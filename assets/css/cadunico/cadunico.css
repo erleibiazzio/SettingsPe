@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 .card {
-    font-size: 12px;
+    font-size: 15px;
     aspect-ratio: 643/312;
     background-color: #cccccc;
     background-position: top left;
@@ -15,7 +15,7 @@
     border: 1px solid;
     border-radius: 4px;
     position: relative;
-    max-width: 643px;
+    max-width: 1007px;
     width: 100%;
     display: grid;
     grid-template-columns: 40% 1fr;
@@ -127,7 +127,7 @@
 .cadunico .text{
     padding: 10px;
     margin: 0 auto;
-    max-width: 643px;
+    max-width: 1007px;
     width: 100%;
 }
 
@@ -135,9 +135,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .logos .logo {
     height: 55px;
     display: flex;
+    justify-content: center;
 }

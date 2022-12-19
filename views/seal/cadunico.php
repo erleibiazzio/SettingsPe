@@ -57,10 +57,6 @@ if($resgistration){
 </div>
 
 <div class="cadunico">
-    <div class="text">
-        Esse cartão não configura em uma comprovação de atuação artística para fins de candidatura em editais da SECULT-PE e FUNDARPE
-    </div>
-
     <div class="logos">
         <div class="logo">
             <img src="<?php $this->asset("img/cadunico/pe-img1.png") ?>" aria-hidden="true">
@@ -75,13 +71,16 @@ if($resgistration){
             <img src="<?php $this->asset("img/cadunico/pe-img4.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img5.png") ?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img7.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
             <img src="<?php $this->asset("img/cadunico/pe-img6.png") ?>" aria-hidden="true">
         </div>
         <div class="logo">
-            <img src="<?php $this->asset("img/cadunico/pe-img7.png") ?>" aria-hidden="true">
+            <img src="<?php $this->asset("img/cadunico/pe-img5.png") ?>" aria-hidden="true">
         </div>
+    </div>
+    <div class="text">
+        Esse cartão não configura em uma comprovação de atuação artística para fins de candidatura em editais da SECULT-PE e FUNDARPE
     </div>
 </div>
