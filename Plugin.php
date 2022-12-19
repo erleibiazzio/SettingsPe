@@ -45,14 +45,14 @@ class Plugin extends \MapasCulturais\Plugin
         $this->registerTaxonomies();
 
         $this->registerAgentMetadata("CPC", [
-            "private" => true,
+            "private" => false,
             "label" => "Cadastro de Produtor Cultural - CPC",
             "type" => "string",
             "available_for_opportunities" => true,
         ]);
 
         $this->registerAgentMetadata("areaprincipal", [
-            "private" => true,
+            "private" => false,
             "label" => "Área de atuação principal",
             "type" => "select",
             "restrictedTerms" => [
@@ -116,7 +116,7 @@ class Plugin extends \MapasCulturais\Plugin
         ]);
 
         $this->registerAgentMetadata("subareaprincipal", [
-            "private" => true,
+            "private" => false,
             "label" => "Sub-área de atuação principal",
             "type" => "select",
             "restrictedTerms" => [
