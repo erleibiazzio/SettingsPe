@@ -46,11 +46,11 @@
 
 /* Right side */
 .card--right {
-    padding: 8px 16px;
-    margin-left: 13px;
+    padding: .66em 1.33em;
+    margin-left: 1.08em;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1em;
 }
 
 .card--right .title {
@@ -64,7 +64,7 @@
     font-size: 2.7em;
     line-height: 1em;
     font-weight: 700;
-    margin: 5px 0 5px;
+    margin: .42em 0;
 }
 
 .card--right .user-info {
@@ -75,28 +75,30 @@
 
 .card--right .user-info__name {
     font-size: 1em;
+    line-height: 1.3em;
 }
 
 .card--right .user-info__notation {
     font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .card--right .user-description {
     font-size: .9em;
     line-height: 1.1em;
-    margin: 15px 0;
+    margin: 1.25em 0;
 }
 
 .card--right .user-tags {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: .66em;
 }
 
 .card--right .user-tags .tag-group {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: .33em;
     align-items: flex-start;
 }
 
@@ -110,7 +112,7 @@
 .tag-group__content {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: .33em;
 }
 
 .card--right .user-tags .tag-group .tag-group__content .tag {
@@ -118,7 +120,7 @@
     display: inline;
     font-size: 1.1em;
     border-radius: 5px;
-    padding: 4px 10px;
+    padding: .33em .83em;
     min-width: 108px;
     text-align: center;
     font-weight: 500;
