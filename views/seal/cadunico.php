@@ -14,6 +14,7 @@ if($resgistration){
 }
 ?>
 
+<br><br>
 <div class="card" style="background-image: url(<?php $this->asset("img/cadunico/card-bg.png") ?>);">
     <div class="card--left">
         <div class="user-img">
