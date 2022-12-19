@@ -30,9 +30,11 @@ if($resgistration){
             <?= $agent->name ?>
         </div>
         <div class="user-info">
+            <?php if($agent->nomeSocial):?>
             <div class="user-info__name">
-                Nome completo: <?= $agent->nomeCompleto ?>
+                Nome social: <?= $agent->nomeSocial ?>
             </div>
+            <?php endif?>
             <div class="user-info__notation">
                 ID: <?= $agent->id ?> | CPC: <?= $agent->CPC ?>
             </div>
