@@ -1,6 +1,5 @@
 <?php
 
-$this->layout = "nolayout";
 $agent = $relation->owner;
 
 $area_atuacao_principal = null;
