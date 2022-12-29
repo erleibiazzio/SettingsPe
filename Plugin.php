@@ -11,8 +11,9 @@ class Plugin extends \MapasCulturais\Plugin
     function __construct($config = []) 
     {
         $config += [
-            'field_sub_area_principal' => "field_113",
-            'field_area_principal' => "field_114",
+            'field_sub_area_principal' => "",
+            'field_area_principal' => "",
+            'no_delete_seal_ids' => [],
         ];
 
         parent::__construct($config);
@@ -23,7 +24,8 @@ class Plugin extends \MapasCulturais\Plugin
     {
  
         $app = App::i();
-        
+        $plugin = $this;
+
         $app->view->enqueueStyle("app","settins-pe","css/settins-pe.css");
         $app->view->enqueueStyle("app","cadunico","css/cadunico/cadunico.css");
         
@@ -32,12 +34,25 @@ class Plugin extends \MapasCulturais\Plugin
             $this->addTaxonoyTermsToJs("subarea");
             $this->addTaxonoyTermsToJs("tag");
         });
-
+      
         $app->hook('view.partial(widget-tags).params', function ($data, &$template) {
             if($this->controller->id == "agent"){
                 $template = "widget-tags-pe";
             }
-         });
+        });
+        
+         $app->hook("entity(Seal).delete:before", function() use($plugin, $app){
+            if(in_array($this->id, $plugin->config['no_delete_seal_ids'])){
+                $app->pass();
+            }
+        });
+
+        $app->hook("can(Seal.remove)",function($user, &$result) use($plugin){
+            if(in_array($this->id, $plugin->config['no_delete_seal_ids'])){
+                $result = false;
+            }
+        });
+
     }
 
     public function register()
