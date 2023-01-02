@@ -11,8 +11,8 @@ class Plugin extends \MapasCulturais\Plugin
     function __construct($config = []) 
     {
         $config += [
-            'field_sub_area_principal' => "field_113",
-            'field_area_principal' => "field_114",
+            'field_sub_area_principal' => "",
+            'field_area_principal' => "",
         ];
 
         parent::__construct($config);
