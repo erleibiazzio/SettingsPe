@@ -400,7 +400,7 @@ class Plugin extends \MapasCulturais\Plugin
                     i::__("Webdesign"),
                     i::__("Xaxado"),
                 ],
-                // 'required' => \MapasCulturais\i::__('Sub-area de atuação é um campo obrigatório.'),
+                'required' => \MapasCulturais\i::__('Sub-area de atuação é um campo obrigatório.'),
             ],
         ];
 
