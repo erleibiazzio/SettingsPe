@@ -24,6 +24,10 @@ class Plugin extends \MapasCulturais\Plugin
  
         $app = App::i();
         
+        $app->hook("template(agent.edit.<<edit1|edit2>>-entity-info-taxonomie-area):after",function() use ($app){
+           $this->part("edit-subarea");
+        });
+
         $app->view->enqueueStyle("app","settins-pe","css/settins-pe.css");
         $app->view->enqueueStyle("app","cadunico","css/cadunico/cadunico.css");
         
